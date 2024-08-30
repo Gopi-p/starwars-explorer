@@ -6,6 +6,13 @@ import { SWSpeciesIF } from '../interfaces/species.interfaces';
 import { SWVehicleIF } from '../interfaces/vehicle.interface';
 import { SWStarShipsIF } from '../interfaces/star-ship.interface';
 import { fetchHandler } from '../api/sw_handler.api';
+import {
+  FILMS,
+  PEOPLE,
+  SPECIES,
+  STARSHIPS,
+  VEHICLES,
+} from '../data/sample.data';
 
 @Injectable({
   providedIn: 'root',
@@ -13,11 +20,11 @@ import { fetchHandler } from '../api/sw_handler.api';
 export class DataService {
   constructor(private http: HttpClient) {}
 
-  films: SWFilmIF[] = [];
-  people: SWPeopleIF[] = [];
-  species: SWSpeciesIF[] = [];
-  vehicles: SWVehicleIF[] = [];
-  starShips: SWStarShipsIF[] = [];
+  films: SWFilmIF[] = FILMS;
+  people: SWPeopleIF[] = PEOPLE;
+  species: SWSpeciesIF[] = SPECIES;
+  vehicles: SWVehicleIF[] = VEHICLES;
+  starShips: SWStarShipsIF[] = STARSHIPS;
 
   async getSWAllData() {
     try {

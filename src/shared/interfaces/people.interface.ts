@@ -1,19 +1,19 @@
 export interface SWPeopleIF {
-  name?: string;
-  height?: string;
-  mass?: string;
-  hairColor?: string;
-  skinColor?: string;
-  eyeColor?: string;
-  birthYear?: string;
-  gender?: string;
-  homeworld?: string;
+  name?: string | null;
+  height?: string | null;
+  mass?: string | null;
+  hair_color?: string | null;
+  skin_color?: string | null;
+  eye_color?: string | null;
+  birth_year?: string | null;
+  gender?: string | null;
+  homeworld?: string | null;
   films?: string[] | [];
   species?: string[] | [];
   vehicles?: string[] | [];
   starships?: string[] | [];
-  created?: Date;
-  edited?: Date;
-  url?: string;
+  created?: Date | string;
+  edited?: Date | string;
+  url?: string | null;
   id?: string;
 }
