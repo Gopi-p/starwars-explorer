@@ -19,7 +19,9 @@ const PRIMENG = [ButtonModule];
 export class LayoutComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
-  async ngOnInit() {
+  ngOnInit() {}
+
+  async submitButton() {
     await fetchSWPeopleAPI(this.http);
   }
 }

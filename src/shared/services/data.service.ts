@@ -9,6 +9,10 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   people = [];
+  films = [];
+  species = [];
+  vehicles = [];
+  starShips = [];
 
   async getSWPeople() {
     let result = await fetchSWPeopleAPI(this.http);
