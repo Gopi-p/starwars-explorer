@@ -1,11 +1,10 @@
 //Core
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLinkActive } from '@angular/router';
 
 //PrimeNG
 import { ButtonModule } from 'primeng/button';
-import { fetchSWPeopleAPI } from '../../shared/api/people.api';
+import { DataService } from '../../shared/services/data.service';
 
 const CORE = [RouterOutlet, RouterLinkActive];
 const PRIMENG = [ButtonModule];
@@ -17,11 +16,7 @@ const PRIMENG = [ButtonModule];
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent implements OnInit {
-  constructor(private http: HttpClient) {}
+  constructor(private dataService: DataService) {}
 
-  ngOnInit() {}
-
-  async submitButton() {
-    await fetchSWPeopleAPI(this.http);
-  }
+  async ngOnInit() {}
 }

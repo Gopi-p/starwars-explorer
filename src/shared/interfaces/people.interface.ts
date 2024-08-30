@@ -1,4 +1,4 @@
-export interface SWPeople {
+export interface SWPeopleIF {
   name?: string;
   height?: string;
   mass?: string;
@@ -15,4 +15,5 @@ export interface SWPeople {
   created?: Date;
   edited?: Date;
   url?: string;
+  id?: string;
 }
