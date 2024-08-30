@@ -15,6 +15,13 @@ body {
   margin: 0;
 }
 
+.p-dropdown,
+.p-multiselect,
+.p-inputtext,
+.p-password input {
+  width: 100%;
+}
+
 // -------- Scroll Global bar -----------
 /// width
 ::-webkit-scrollbar {

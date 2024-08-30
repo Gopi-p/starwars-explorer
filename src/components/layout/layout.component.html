@@ -1,5 +1,58 @@
-<div class="flex justify-content-center align-items-center h-screen">
-  <div class="flex gap-4">
-    <p-button label="Check" (onClick)="test()" />
+<div class="bg-primary px-8 py-5">
+  <h1>STAR WARS</h1>
+</div>
+<div class="grid px-8 pt-5 m-0">
+  <div class="col-fixed" style="width: 350px">
+    <div class="p-3 border-round-md border-1 border-blue-500 bg-white">
+      <h4 class="mb-3">Filters</h4>
+      <div class="flex flex-column mb-4">
+        <label for="email" class="mb-2">Email ID</label>
+        <p-multiSelect
+          [options]="filmTitles"
+          [(ngModel)]="selectedFilms"
+          optionLabel="name"
+          placeholder="Select films"
+          class="w-full block"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="p-3 border-round-md border-1 border-blue-500 bg-white">
+      <h4 class="mb-3">StarWar People List</h4>
+      <div class="card">
+        <p-table
+          [value]="people"
+          styleClass="p-datatable-gridlines"
+          [tableStyle]="{ 'min-width': '30rem' }"
+          [paginator]="true"
+          [rows]="10"
+        >
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Species</th>
+              <th>Birth Year</th>
+              <th>Gender</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-people>
+            <tr>
+              <td>{{ people.id }}</td>
+              <td>{{ people.name }}</td>
+              <td>{{ people.species[0] | species : "name" ?? "Unknown" }}</td>
+              <td>{{ people.birth_year }}</td>
+              <td>
+                <p-tag
+                  [value]="people.gender | titlecase"
+                  [severity]="getGender(people.gender)"
+                />
+              </td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
   </div>
 </div>

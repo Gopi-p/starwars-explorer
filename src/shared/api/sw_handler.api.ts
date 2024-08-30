@@ -9,7 +9,7 @@ export const fetchHandler = async <T>(
 ): Promise<T[]> => {
   try {
     const apiURL = `${BASE_URL}${route}/`;
-    const idRegex = new RegExp(`/${route}/(\\d+)/`);
+    const idRegex = new RegExp(`/(${route})/(\\d+)/`);
 
     const res: T[] = await lastValueFrom(
       http.get<any>(apiURL).pipe(
@@ -49,13 +49,7 @@ export const fetchHandler = async <T>(
 
     return res;
   } catch (error) {
-    console.log('@@  error: ', error);
+    console.log('@@  fetchHandler [ERR]: ', error);
     return [];
   }
 };
-
-// const extractIdFromUrl = (url: string, route: string): string | null => {
-//   const regex = new RegExp(`/${route}/(\\d+)/`);
-//   const match = url.match(regex);
-//   return match ? match[1] : null;
-// };

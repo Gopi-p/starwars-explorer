@@ -13,10 +13,10 @@ export class AppComponent {
 
   async ngOnInit() {
     // await this.dataService.getSWAllData();
-    console.log('@@  this.dataService.films: ', this.dataService.films);
-    console.log('@@  this.dataService.species: ', this.dataService.species);
-    console.log('@@  this.dataService.vehicles: ', this.dataService.vehicles);
-    console.log('@@  this.dataService.starShips: ', this.dataService.starShips);
-    console.log('@@  this.dataService.people: ', this.dataService.people);
+    // console.log('@@  this.dataService.films: ', this.dataService.films);
+    // console.log('@@  this.dataService.species: ', this.dataService.species);
+    // console.log('@@  this.dataService.vehicles: ', this.dataService.vehicles);
+    // console.log('@@  this.dataService.starShips: ', this.dataService.starShips);
+    // console.log('@@  this.dataService.people: ', this.dataService.people);
   }
 }
