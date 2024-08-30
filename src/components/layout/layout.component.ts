@@ -19,4 +19,9 @@ export class LayoutComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   async ngOnInit() {}
+
+  test() {
+    const onlyNames = this.dataService.films.map((film) => film.id);
+    console.log('@@  onlyNames: ', onlyNames);
+  }
 }

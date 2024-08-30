@@ -64,7 +64,7 @@ export const FILMS: SWFilmIF[] = [
     created: '2014-12-10T14:23:31.880000Z',
     edited: '2014-12-20T19:49:45.256000Z',
     url: 'https://swapi.dev/api/films/1/',
-    id: 'films',
+    id: '1',
   },
   {
     title: 'The Empire Strikes Back',
@@ -127,7 +127,7 @@ export const FILMS: SWFilmIF[] = [
     created: '2014-12-12T11:26:24.656000Z',
     edited: '2014-12-15T13:07:53.386000Z',
     url: 'https://swapi.dev/api/films/2/',
-    id: 'films',
+    id: '2',
   },
   {
     title: 'Return of the Jedi',
@@ -204,7 +204,7 @@ export const FILMS: SWFilmIF[] = [
     created: '2014-12-18T10:39:33.255000Z',
     edited: '2014-12-20T09:48:37.462000Z',
     url: 'https://swapi.dev/api/films/3/',
-    id: 'films',
+    id: '3',
   },
   {
     title: 'The Phantom Menace',
@@ -296,7 +296,7 @@ export const FILMS: SWFilmIF[] = [
     created: '2014-12-19T16:52:55.740000Z',
     edited: '2014-12-20T10:54:07.216000Z',
     url: 'https://swapi.dev/api/films/4/',
-    id: 'films',
+    id: '4',
   },
   {
     title: 'Attack of the Clones',
@@ -398,7 +398,7 @@ export const FILMS: SWFilmIF[] = [
     created: '2014-12-20T10:57:57.886000Z',
     edited: '2014-12-20T20:18:48.516000Z',
     url: 'https://swapi.dev/api/films/5/',
-    id: 'films',
+    id: '5',
   },
   {
     title: 'Revenge of the Sith',
@@ -513,7 +513,7 @@ export const FILMS: SWFilmIF[] = [
     created: '2014-12-20T18:49:38.403000Z',
     edited: '2014-12-20T20:47:52.073000Z',
     url: 'https://swapi.dev/api/films/6/',
-    id: 'films',
+    id: '6',
   },
 ];
 export const PEOPLE: SWPeopleIF[] = [
@@ -545,7 +545,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-09T13:50:51.644000Z',
     edited: '2014-12-20T21:17:56.891000Z',
     url: 'https://swapi.dev/api/people/1/',
-    id: 'people',
+    id: '1',
   },
   {
     name: 'C-3PO',
@@ -571,7 +571,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:10:51.357000Z',
     edited: '2014-12-20T21:17:50.309000Z',
     url: 'https://swapi.dev/api/people/2/',
-    id: 'people',
+    id: '2',
   },
   {
     name: 'R2-D2',
@@ -597,7 +597,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:11:50.376000Z',
     edited: '2014-12-20T21:17:50.311000Z',
     url: 'https://swapi.dev/api/people/3/',
-    id: 'people',
+    id: '3',
   },
   {
     name: 'Darth Vader',
@@ -621,7 +621,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:18:20.704000Z',
     edited: '2014-12-20T21:17:50.313000Z',
     url: 'https://swapi.dev/api/people/4/',
-    id: 'people',
+    id: '4',
   },
   {
     name: 'Leia Organa',
@@ -645,7 +645,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:20:09.791000Z',
     edited: '2014-12-20T21:17:50.315000Z',
     url: 'https://swapi.dev/api/people/5/',
-    id: 'people',
+    id: '5',
   },
   {
     name: 'Owen Lars',
@@ -668,7 +668,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:52:14.024000Z',
     edited: '2014-12-20T21:17:50.317000Z',
     url: 'https://swapi.dev/api/people/6/',
-    id: 'people',
+    id: '6',
   },
   {
     name: 'Beru Whitesun lars',
@@ -691,7 +691,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:53:41.121000Z',
     edited: '2014-12-20T21:17:50.319000Z',
     url: 'https://swapi.dev/api/people/7/',
-    id: 'people',
+    id: '7',
   },
   {
     name: 'R5-D4',
@@ -710,7 +710,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:57:50.959000Z',
     edited: '2014-12-20T21:17:50.321000Z',
     url: 'https://swapi.dev/api/people/8/',
-    id: 'people',
+    id: '8',
   },
   {
     name: 'Biggs Darklighter',
@@ -729,7 +729,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T15:59:50.509000Z',
     edited: '2014-12-20T21:17:50.323000Z',
     url: 'https://swapi.dev/api/people/9/',
-    id: 'people',
+    id: '9',
   },
   {
     name: 'Obi-Wan Kenobi',
@@ -761,7 +761,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T16:16:29.192000Z',
     edited: '2014-12-20T21:17:50.325000Z',
     url: 'https://swapi.dev/api/people/10/',
-    id: 'people',
+    id: '10',
   },
   {
     name: 'Anakin Skywalker',
@@ -791,7 +791,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T16:20:44.310000Z',
     edited: '2014-12-20T21:17:50.327000Z',
     url: 'https://swapi.dev/api/people/11/',
-    id: 'people',
+    id: '11',
   },
   {
     name: 'Wilhuff Tarkin',
@@ -810,7 +810,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T16:26:56.138000Z',
     edited: '2014-12-20T21:17:50.330000Z',
     url: 'https://swapi.dev/api/people/12/',
-    id: 'people',
+    id: '12',
   },
   {
     name: 'Chewbacca',
@@ -837,7 +837,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T16:42:45.066000Z',
     edited: '2014-12-20T21:17:50.332000Z',
     url: 'https://swapi.dev/api/people/13/',
-    id: 'people',
+    id: '13',
   },
   {
     name: 'Han Solo',
@@ -863,7 +863,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T16:49:14.582000Z',
     edited: '2014-12-20T21:17:50.334000Z',
     url: 'https://swapi.dev/api/people/14/',
-    id: 'people',
+    id: '14',
   },
   {
     name: 'Greedo',
@@ -882,7 +882,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T17:03:30.334000Z',
     edited: '2014-12-20T21:17:50.336000Z',
     url: 'https://swapi.dev/api/people/15/',
-    id: 'people',
+    id: '15',
   },
   {
     name: 'Jabba Desilijic Tiure',
@@ -905,7 +905,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-10T17:11:31.638000Z',
     edited: '2014-12-20T21:17:50.338000Z',
     url: 'https://swapi.dev/api/people/16/',
-    id: 'people',
+    id: '16',
   },
   {
     name: 'Wedge Antilles',
@@ -928,7 +928,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-12T11:08:06.469000Z',
     edited: '2014-12-20T21:17:50.341000Z',
     url: 'https://swapi.dev/api/people/18/',
-    id: 'people',
+    id: '18',
   },
   {
     name: 'Jek Tono Porkins',
@@ -947,7 +947,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-12T11:16:56.569000Z',
     edited: '2014-12-20T21:17:50.343000Z',
     url: 'https://swapi.dev/api/people/19/',
-    id: 'people',
+    id: '19',
   },
   {
     name: 'Yoda',
@@ -972,7 +972,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-15T12:26:01.042000Z',
     edited: '2014-12-20T21:17:50.345000Z',
     url: 'https://swapi.dev/api/people/20/',
-    id: 'people',
+    id: '20',
   },
   {
     name: 'Palpatine',
@@ -997,7 +997,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-15T12:48:05.971000Z',
     edited: '2014-12-20T21:17:50.347000Z',
     url: 'https://swapi.dev/api/people/21/',
-    id: 'people',
+    id: '21',
   },
   {
     name: 'Boba Fett',
@@ -1020,7 +1020,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-15T12:49:32.457000Z',
     edited: '2014-12-20T21:17:50.349000Z',
     url: 'https://swapi.dev/api/people/22/',
-    id: 'people',
+    id: '22',
   },
   {
     name: 'IG-88',
@@ -1039,7 +1039,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-15T12:51:10.076000Z',
     edited: '2014-12-20T21:17:50.351000Z',
     url: 'https://swapi.dev/api/people/23/',
-    id: 'people',
+    id: '23',
   },
   {
     name: 'Bossk',
@@ -1058,7 +1058,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-15T12:53:49.297000Z',
     edited: '2014-12-20T21:17:50.355000Z',
     url: 'https://swapi.dev/api/people/24/',
-    id: 'people',
+    id: '24',
   },
   {
     name: 'Lando Calrissian',
@@ -1077,7 +1077,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-15T12:56:32.683000Z',
     edited: '2014-12-20T21:17:50.357000Z',
     url: 'https://swapi.dev/api/people/25/',
-    id: 'people',
+    id: '25',
   },
   {
     name: 'Lobot',
@@ -1096,7 +1096,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-15T13:01:57.178000Z',
     edited: '2014-12-20T21:17:50.359000Z',
     url: 'https://swapi.dev/api/people/26/',
-    id: 'people',
+    id: '26',
   },
   {
     name: 'Ackbar',
@@ -1115,7 +1115,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-18T11:07:50.584000Z',
     edited: '2014-12-20T21:17:50.362000Z',
     url: 'https://swapi.dev/api/people/27/',
-    id: 'people',
+    id: '27',
   },
   {
     name: 'Mon Mothma',
@@ -1134,7 +1134,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-18T11:12:38.895000Z',
     edited: '2014-12-20T21:17:50.364000Z',
     url: 'https://swapi.dev/api/people/28/',
-    id: 'people',
+    id: '28',
   },
   {
     name: 'Arvel Crynyd',
@@ -1153,7 +1153,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-18T11:16:33.020000Z',
     edited: '2014-12-20T21:17:50.367000Z',
     url: 'https://swapi.dev/api/people/29/',
-    id: 'people',
+    id: '29',
   },
   {
     name: 'Wicket Systri Warrick',
@@ -1172,7 +1172,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-18T11:21:58.954000Z',
     edited: '2014-12-20T21:17:50.369000Z',
     url: 'https://swapi.dev/api/people/30/',
-    id: 'people',
+    id: '30',
   },
   {
     name: 'Nien Nunb',
@@ -1191,7 +1191,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-18T11:26:18.541000Z',
     edited: '2014-12-20T21:17:50.371000Z',
     url: 'https://swapi.dev/api/people/31/',
-    id: 'people',
+    id: '31',
   },
   {
     name: 'Qui-Gon Jinn',
@@ -1210,7 +1210,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T16:54:53.618000Z',
     edited: '2014-12-20T21:17:50.375000Z',
     url: 'https://swapi.dev/api/people/32/',
-    id: 'people',
+    id: '32',
   },
   {
     name: 'Nute Gunray',
@@ -1233,7 +1233,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:05:57.357000Z',
     edited: '2014-12-20T21:17:50.377000Z',
     url: 'https://swapi.dev/api/people/33/',
-    id: 'people',
+    id: '33',
   },
   {
     name: 'Finis Valorum',
@@ -1252,7 +1252,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:21:45.915000Z',
     edited: '2014-12-20T21:17:50.379000Z',
     url: 'https://swapi.dev/api/people/34/',
-    id: 'people',
+    id: '34',
   },
   {
     name: 'Padmé Amidala',
@@ -1279,7 +1279,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:28:26.926000Z',
     edited: '2014-12-20T21:17:50.381000Z',
     url: 'https://swapi.dev/api/people/35/',
-    id: 'people',
+    id: '35',
   },
   {
     name: 'Jar Jar Binks',
@@ -1298,7 +1298,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:29:32.489000Z',
     edited: '2014-12-20T21:17:50.383000Z',
     url: 'https://swapi.dev/api/people/36/',
-    id: 'people',
+    id: '36',
   },
   {
     name: 'Roos Tarpals',
@@ -1317,7 +1317,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:32:56.741000Z',
     edited: '2014-12-20T21:17:50.385000Z',
     url: 'https://swapi.dev/api/people/37/',
-    id: 'people',
+    id: '37',
   },
   {
     name: 'Rugor Nass',
@@ -1336,7 +1336,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:33:38.909000Z',
     edited: '2014-12-20T21:17:50.388000Z',
     url: 'https://swapi.dev/api/people/38/',
-    id: 'people',
+    id: '38',
   },
   {
     name: 'Ric Olié',
@@ -1355,7 +1355,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:45:01.522000Z',
     edited: '2014-12-20T21:17:50.392000Z',
     url: 'https://swapi.dev/api/people/39/',
-    id: 'people',
+    id: '39',
   },
   {
     name: 'Watto',
@@ -1374,7 +1374,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:48:54.647000Z',
     edited: '2014-12-20T21:17:50.395000Z',
     url: 'https://swapi.dev/api/people/40/',
-    id: 'people',
+    id: '40',
   },
   {
     name: 'Sebulba',
@@ -1393,7 +1393,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:53:02.586000Z',
     edited: '2014-12-20T21:17:50.397000Z',
     url: 'https://swapi.dev/api/people/41/',
-    id: 'people',
+    id: '41',
   },
   {
     name: 'Quarsh Panaka',
@@ -1412,7 +1412,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:55:43.348000Z',
     edited: '2014-12-20T21:17:50.399000Z',
     url: 'https://swapi.dev/api/people/42/',
-    id: 'people',
+    id: '42',
   },
   {
     name: 'Shmi Skywalker',
@@ -1431,7 +1431,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T17:57:41.191000Z',
     edited: '2014-12-20T21:17:50.401000Z',
     url: 'https://swapi.dev/api/people/43/',
-    id: 'people',
+    id: '43',
   },
   {
     name: 'Darth Maul',
@@ -1450,7 +1450,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-19T18:00:41.929000Z',
     edited: '2014-12-20T21:17:50.403000Z',
     url: 'https://swapi.dev/api/people/44/',
-    id: 'people',
+    id: '44',
   },
   {
     name: 'Bib Fortuna',
@@ -1469,7 +1469,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T09:47:02.512000Z',
     edited: '2014-12-20T21:17:50.407000Z',
     url: 'https://swapi.dev/api/people/45/',
-    id: 'people',
+    id: '45',
   },
   {
     name: 'Ayla Secura',
@@ -1492,7 +1492,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T09:48:01.172000Z',
     edited: '2014-12-20T21:17:50.409000Z',
     url: 'https://swapi.dev/api/people/46/',
-    id: 'people',
+    id: '46',
   },
   {
     name: 'Ratts Tyerel',
@@ -1511,7 +1511,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T09:53:15.086000Z',
     edited: '2014-12-20T21:17:50.410000Z',
     url: 'https://swapi.dev/api/people/47/',
-    id: 'people',
+    id: '47',
   },
   {
     name: 'Dud Bolt',
@@ -1530,7 +1530,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T09:57:31.858000Z',
     edited: '2014-12-20T21:17:50.414000Z',
     url: 'https://swapi.dev/api/people/48/',
-    id: 'people',
+    id: '48',
   },
   {
     name: 'Gasgano',
@@ -1549,7 +1549,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:02:12.223000Z',
     edited: '2014-12-20T21:17:50.416000Z',
     url: 'https://swapi.dev/api/people/49/',
-    id: 'people',
+    id: '49',
   },
   {
     name: 'Ben Quadinaros',
@@ -1568,7 +1568,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:08:33.777000Z',
     edited: '2014-12-20T21:17:50.417000Z',
     url: 'https://swapi.dev/api/people/50/',
-    id: 'people',
+    id: '50',
   },
   {
     name: 'Mace Windu',
@@ -1591,7 +1591,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:12:30.846000Z',
     edited: '2014-12-20T21:17:50.420000Z',
     url: 'https://swapi.dev/api/people/51/',
-    id: 'people',
+    id: '51',
   },
   {
     name: 'Ki-Adi-Mundi',
@@ -1614,7 +1614,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:15:32.293000Z',
     edited: '2014-12-20T21:17:50.422000Z',
     url: 'https://swapi.dev/api/people/52/',
-    id: 'people',
+    id: '52',
   },
   {
     name: 'Kit Fisto',
@@ -1637,7 +1637,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:18:57.202000Z',
     edited: '2014-12-20T21:17:50.424000Z',
     url: 'https://swapi.dev/api/people/53/',
-    id: 'people',
+    id: '53',
   },
   {
     name: 'Eeth Koth',
@@ -1656,7 +1656,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:26:47.902000Z',
     edited: '2014-12-20T21:17:50.427000Z',
     url: 'https://swapi.dev/api/people/54/',
-    id: 'people',
+    id: '54',
   },
   {
     name: 'Adi Gallia',
@@ -1675,7 +1675,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:29:11.661000Z',
     edited: '2014-12-20T21:17:50.432000Z',
     url: 'https://swapi.dev/api/people/55/',
-    id: 'people',
+    id: '55',
   },
   {
     name: 'Saesee Tiin',
@@ -1694,7 +1694,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:32:11.669000Z',
     edited: '2014-12-20T21:17:50.434000Z',
     url: 'https://swapi.dev/api/people/56/',
-    id: 'people',
+    id: '56',
   },
   {
     name: 'Yarael Poof',
@@ -1713,7 +1713,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:34:48.725000Z',
     edited: '2014-12-20T21:17:50.437000Z',
     url: 'https://swapi.dev/api/people/57/',
-    id: 'people',
+    id: '57',
   },
   {
     name: 'Plo Koon',
@@ -1736,7 +1736,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:49:19.859000Z',
     edited: '2014-12-20T21:17:50.439000Z',
     url: 'https://swapi.dev/api/people/58/',
-    id: 'people',
+    id: '58',
   },
   {
     name: 'Mas Amedda',
@@ -1755,7 +1755,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T10:53:26.457000Z',
     edited: '2014-12-20T21:17:50.442000Z',
     url: 'https://swapi.dev/api/people/59/',
-    id: 'people',
+    id: '59',
   },
   {
     name: 'Gregar Typho',
@@ -1774,7 +1774,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T11:10:10.381000Z',
     edited: '2014-12-20T21:17:50.445000Z',
     url: 'https://swapi.dev/api/people/60/',
-    id: 'people',
+    id: '60',
   },
   {
     name: 'Cordé',
@@ -1793,7 +1793,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T11:11:39.630000Z',
     edited: '2014-12-20T21:17:50.449000Z',
     url: 'https://swapi.dev/api/people/61/',
-    id: 'people',
+    id: '61',
   },
   {
     name: 'Cliegg Lars',
@@ -1812,7 +1812,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T15:59:03.958000Z',
     edited: '2014-12-20T21:17:50.451000Z',
     url: 'https://swapi.dev/api/people/62/',
-    id: 'people',
+    id: '62',
   },
   {
     name: 'Poggle the Lesser',
@@ -1831,7 +1831,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:40:43.977000Z',
     edited: '2014-12-20T21:17:50.453000Z',
     url: 'https://swapi.dev/api/people/63/',
-    id: 'people',
+    id: '63',
   },
   {
     name: 'Luminara Unduli',
@@ -1850,7 +1850,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:45:53.668000Z',
     edited: '2014-12-20T21:17:50.455000Z',
     url: 'https://swapi.dev/api/people/64/',
-    id: 'people',
+    id: '64',
   },
   {
     name: 'Barriss Offee',
@@ -1869,7 +1869,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:46:40.440000Z',
     edited: '2014-12-20T21:17:50.457000Z',
     url: 'https://swapi.dev/api/people/65/',
-    id: 'people',
+    id: '65',
   },
   {
     name: 'Dormé',
@@ -1888,7 +1888,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:49:14.640000Z',
     edited: '2014-12-20T21:17:50.460000Z',
     url: 'https://swapi.dev/api/people/66/',
-    id: 'people',
+    id: '66',
   },
   {
     name: 'Dooku',
@@ -1907,7 +1907,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:52:14.726000Z',
     edited: '2014-12-20T21:17:50.462000Z',
     url: 'https://swapi.dev/api/people/67/',
-    id: 'people',
+    id: '67',
   },
   {
     name: 'Bail Prestor Organa',
@@ -1926,7 +1926,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:53:08.575000Z',
     edited: '2014-12-20T21:17:50.463000Z',
     url: 'https://swapi.dev/api/people/68/',
-    id: 'people',
+    id: '68',
   },
   {
     name: 'Jango Fett',
@@ -1945,7 +1945,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:54:41.620000Z',
     edited: '2014-12-20T21:17:50.465000Z',
     url: 'https://swapi.dev/api/people/69/',
-    id: 'people',
+    id: '69',
   },
   {
     name: 'Zam Wesell',
@@ -1964,7 +1964,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T16:57:44.471000Z',
     edited: '2014-12-20T21:17:50.468000Z',
     url: 'https://swapi.dev/api/people/70/',
-    id: 'people',
+    id: '70',
   },
   {
     name: 'Dexter Jettster',
@@ -1983,7 +1983,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T17:28:27.248000Z',
     edited: '2014-12-20T21:17:50.470000Z',
     url: 'https://swapi.dev/api/people/71/',
-    id: 'people',
+    id: '71',
   },
   {
     name: 'Lama Su',
@@ -2002,7 +2002,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T17:30:50.416000Z',
     edited: '2014-12-20T21:17:50.473000Z',
     url: 'https://swapi.dev/api/people/72/',
-    id: 'people',
+    id: '72',
   },
   {
     name: 'Taun We',
@@ -2021,7 +2021,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T17:31:21.195000Z',
     edited: '2014-12-20T21:17:50.474000Z',
     url: 'https://swapi.dev/api/people/73/',
-    id: 'people',
+    id: '73',
   },
   {
     name: 'Jocasta Nu',
@@ -2040,7 +2040,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T17:32:51.996000Z',
     edited: '2014-12-20T21:17:50.476000Z',
     url: 'https://swapi.dev/api/people/74/',
-    id: 'people',
+    id: '74',
   },
   {
     name: 'R4-P17',
@@ -2059,7 +2059,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T17:43:36.409000Z',
     edited: '2014-12-20T21:17:50.478000Z',
     url: 'https://swapi.dev/api/people/75/',
-    id: 'people',
+    id: '75',
   },
   {
     name: 'Wat Tambor',
@@ -2078,7 +2078,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T17:53:52.607000Z',
     edited: '2014-12-20T21:17:50.481000Z',
     url: 'https://swapi.dev/api/people/76/',
-    id: 'people',
+    id: '76',
   },
   {
     name: 'San Hill',
@@ -2097,7 +2097,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T17:58:17.049000Z',
     edited: '2014-12-20T21:17:50.484000Z',
     url: 'https://swapi.dev/api/people/77/',
-    id: 'people',
+    id: '77',
   },
   {
     name: 'Shaak Ti',
@@ -2116,7 +2116,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T18:44:01.103000Z',
     edited: '2014-12-20T21:17:50.486000Z',
     url: 'https://swapi.dev/api/people/78/',
-    id: 'people',
+    id: '78',
   },
   {
     name: 'Grievous',
@@ -2135,7 +2135,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T19:43:53.348000Z',
     edited: '2014-12-20T21:17:50.488000Z',
     url: 'https://swapi.dev/api/people/79/',
-    id: 'people',
+    id: '79',
   },
   {
     name: 'Tarfful',
@@ -2154,7 +2154,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T19:46:34.209000Z',
     edited: '2014-12-20T21:17:50.491000Z',
     url: 'https://swapi.dev/api/people/80/',
-    id: 'people',
+    id: '80',
   },
   {
     name: 'Raymus Antilles',
@@ -2173,7 +2173,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T19:49:35.583000Z',
     edited: '2014-12-20T21:17:50.493000Z',
     url: 'https://swapi.dev/api/people/81/',
-    id: 'people',
+    id: '81',
   },
   {
     name: 'Sly Moore',
@@ -2192,7 +2192,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T20:18:37.619000Z',
     edited: '2014-12-20T21:17:50.496000Z',
     url: 'https://swapi.dev/api/people/82/',
-    id: 'people',
+    id: '82',
   },
   {
     name: 'Tion Medon',
@@ -2211,7 +2211,7 @@ export const PEOPLE: SWPeopleIF[] = [
     created: '2014-12-20T20:35:04.260000Z',
     edited: '2014-12-20T21:17:50.498000Z',
     url: 'https://swapi.dev/api/people/83/',
-    id: 'people',
+    id: '83',
   },
 ];
 export const SPECIES: SWSpeciesIF[] = [
@@ -2243,7 +2243,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-10T13:52:11.567000Z',
     edited: '2014-12-20T21:36:42.136000Z',
     url: 'https://swapi.dev/api/species/1/',
-    id: 'species',
+    id: '1',
   },
   {
     name: 'Droid',
@@ -2273,7 +2273,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-10T15:16:16.259000Z',
     edited: '2014-12-20T21:36:42.139000Z',
     url: 'https://swapi.dev/api/species/2/',
-    id: 'species',
+    id: '2',
   },
   {
     name: 'Wookie',
@@ -2299,7 +2299,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-10T16:44:31.486000Z',
     edited: '2014-12-20T21:36:42.142000Z',
     url: 'https://swapi.dev/api/species/3/',
-    id: 'species',
+    id: '3',
   },
   {
     name: 'Rodian',
@@ -2317,7 +2317,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-10T17:05:26.471000Z',
     edited: '2014-12-20T21:36:42.144000Z',
     url: 'https://swapi.dev/api/species/4/',
-    id: 'species',
+    id: '4',
   },
   {
     name: 'Hutt',
@@ -2335,7 +2335,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-10T17:12:50.410000Z',
     edited: '2014-12-20T21:36:42.146000Z',
     url: 'https://swapi.dev/api/species/5/',
-    id: 'species',
+    id: '5',
   },
   {
     name: "Yoda's species",
@@ -2359,7 +2359,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-15T12:27:22.877000Z',
     edited: '2014-12-20T21:36:42.148000Z',
     url: 'https://swapi.dev/api/species/6/',
-    id: 'species',
+    id: '6',
   },
   {
     name: 'Trandoshan',
@@ -2377,7 +2377,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-15T13:07:47.704000Z',
     edited: '2014-12-20T21:36:42.151000Z',
     url: 'https://swapi.dev/api/species/7/',
-    id: 'species',
+    id: '7',
   },
   {
     name: 'Mon Calamari',
@@ -2395,7 +2395,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-18T11:09:52.263000Z',
     edited: '2014-12-20T21:36:42.153000Z',
     url: 'https://swapi.dev/api/species/8/',
-    id: 'species',
+    id: '8',
   },
   {
     name: 'Ewok',
@@ -2413,7 +2413,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-18T11:22:00.285000Z',
     edited: '2014-12-20T21:36:42.155000Z',
     url: 'https://swapi.dev/api/species/9/',
-    id: 'species',
+    id: '9',
   },
   {
     name: 'Sullustan',
@@ -2431,7 +2431,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-18T11:26:20.103000Z',
     edited: '2014-12-20T21:36:42.157000Z',
     url: 'https://swapi.dev/api/species/10/',
-    id: 'species',
+    id: '10',
   },
   {
     name: 'Neimodian',
@@ -2449,7 +2449,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-19T17:07:31.319000Z',
     edited: '2014-12-20T21:36:42.160000Z',
     url: 'https://swapi.dev/api/species/11/',
-    id: 'species',
+    id: '11',
   },
   {
     name: 'Gungan',
@@ -2471,7 +2471,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-19T17:30:37.341000Z',
     edited: '2014-12-20T21:36:42.163000Z',
     url: 'https://swapi.dev/api/species/12/',
-    id: 'species',
+    id: '12',
   },
   {
     name: 'Toydarian',
@@ -2489,7 +2489,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-19T17:48:56.893000Z',
     edited: '2014-12-20T21:36:42.165000Z',
     url: 'https://swapi.dev/api/species/13/',
-    id: 'species',
+    id: '13',
   },
   {
     name: 'Dug',
@@ -2507,7 +2507,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-19T17:53:11.214000Z',
     edited: '2014-12-20T21:36:42.167000Z',
     url: 'https://swapi.dev/api/species/14/',
-    id: 'species',
+    id: '14',
   },
   {
     name: "Twi'lek",
@@ -2533,7 +2533,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T09:48:02.406000Z',
     edited: '2014-12-20T21:36:42.169000Z',
     url: 'https://swapi.dev/api/species/15/',
-    id: 'species',
+    id: '15',
   },
   {
     name: 'Aleena',
@@ -2551,7 +2551,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T09:53:16.481000Z',
     edited: '2014-12-20T21:36:42.171000Z',
     url: 'https://swapi.dev/api/species/16/',
-    id: 'species',
+    id: '16',
   },
   {
     name: 'Vulptereen',
@@ -2569,7 +2569,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T09:57:33.128000Z',
     edited: '2014-12-20T21:36:42.173000Z',
     url: 'https://swapi.dev/api/species/17/',
-    id: 'species',
+    id: '17',
   },
   {
     name: 'Xexto',
@@ -2587,7 +2587,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:02:13.915000Z',
     edited: '2014-12-20T21:36:42.175000Z',
     url: 'https://swapi.dev/api/species/18/',
-    id: 'species',
+    id: '18',
   },
   {
     name: 'Toong',
@@ -2605,7 +2605,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:08:36.795000Z',
     edited: '2014-12-20T21:36:42.177000Z',
     url: 'https://swapi.dev/api/species/19/',
-    id: 'species',
+    id: '19',
   },
   {
     name: 'Cerean',
@@ -2623,7 +2623,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:15:33.765000Z',
     edited: '2014-12-20T21:36:42.179000Z',
     url: 'https://swapi.dev/api/species/20/',
-    id: 'species',
+    id: '20',
   },
   {
     name: 'Nautolan',
@@ -2641,7 +2641,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:18:58.610000Z',
     edited: '2014-12-20T21:36:42.181000Z',
     url: 'https://swapi.dev/api/species/21/',
-    id: 'species',
+    id: '21',
   },
   {
     name: 'Zabrak',
@@ -2662,7 +2662,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:26:59.894000Z',
     edited: '2014-12-20T21:36:42.183000Z',
     url: 'https://swapi.dev/api/species/22/',
-    id: 'species',
+    id: '22',
   },
   {
     name: 'Tholothian',
@@ -2680,7 +2680,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:29:13.798000Z',
     edited: '2014-12-20T21:36:42.186000Z',
     url: 'https://swapi.dev/api/species/23/',
-    id: 'species',
+    id: '23',
   },
   {
     name: 'Iktotchi',
@@ -2698,7 +2698,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:32:13.046000Z',
     edited: '2014-12-20T21:36:42.188000Z',
     url: 'https://swapi.dev/api/species/24/',
-    id: 'species',
+    id: '24',
   },
   {
     name: 'Quermian',
@@ -2716,7 +2716,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:34:50.827000Z',
     edited: '2014-12-20T21:36:42.189000Z',
     url: 'https://swapi.dev/api/species/25/',
-    id: 'species',
+    id: '25',
   },
   {
     name: 'Kel Dor',
@@ -2734,7 +2734,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:49:21.692000Z',
     edited: '2014-12-20T21:36:42.191000Z',
     url: 'https://swapi.dev/api/species/26/',
-    id: 'species',
+    id: '26',
   },
   {
     name: 'Chagrian',
@@ -2752,7 +2752,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T10:53:28.795000Z',
     edited: '2014-12-20T21:36:42.193000Z',
     url: 'https://swapi.dev/api/species/27/',
-    id: 'species',
+    id: '27',
   },
   {
     name: 'Geonosian',
@@ -2770,7 +2770,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T16:40:45.618000Z',
     edited: '2014-12-20T21:36:42.195000Z',
     url: 'https://swapi.dev/api/species/28/',
-    id: 'species',
+    id: '28',
   },
   {
     name: 'Mirialan',
@@ -2791,7 +2791,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T16:46:48.290000Z',
     edited: '2014-12-20T21:36:42.197000Z',
     url: 'https://swapi.dev/api/species/29/',
-    id: 'species',
+    id: '29',
   },
   {
     name: 'Clawdite',
@@ -2809,7 +2809,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T16:57:46.171000Z',
     edited: '2014-12-20T21:36:42.199000Z',
     url: 'https://swapi.dev/api/species/30/',
-    id: 'species',
+    id: '30',
   },
   {
     name: 'Besalisk',
@@ -2827,7 +2827,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T17:28:28.821000Z',
     edited: '2014-12-20T21:36:42.200000Z',
     url: 'https://swapi.dev/api/species/31/',
-    id: 'species',
+    id: '31',
   },
   {
     name: 'Kaminoan',
@@ -2848,7 +2848,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T17:31:24.838000Z',
     edited: '2014-12-20T21:36:42.202000Z',
     url: 'https://swapi.dev/api/species/32/',
-    id: 'species',
+    id: '32',
   },
   {
     name: 'Skakoan',
@@ -2866,7 +2866,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T17:53:54.515000Z',
     edited: '2014-12-20T21:36:42.204000Z',
     url: 'https://swapi.dev/api/species/33/',
-    id: 'species',
+    id: '33',
   },
   {
     name: 'Muun',
@@ -2884,7 +2884,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T17:58:19.088000Z',
     edited: '2014-12-20T21:36:42.207000Z',
     url: 'https://swapi.dev/api/species/34/',
-    id: 'species',
+    id: '34',
   },
   {
     name: 'Togruta',
@@ -2902,7 +2902,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T18:44:03.246000Z',
     edited: '2014-12-20T21:36:42.209000Z',
     url: 'https://swapi.dev/api/species/35/',
-    id: 'species',
+    id: '35',
   },
   {
     name: 'Kaleesh',
@@ -2920,7 +2920,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T19:45:42.537000Z',
     edited: '2014-12-20T21:36:42.210000Z',
     url: 'https://swapi.dev/api/species/36/',
-    id: 'species',
+    id: '36',
   },
   {
     name: "Pau'an",
@@ -2938,7 +2938,7 @@ export const SPECIES: SWSpeciesIF[] = [
     created: '2014-12-20T20:35:06.777000Z',
     edited: '2014-12-20T21:36:42.212000Z',
     url: 'https://swapi.dev/api/species/37/',
-    id: 'species',
+    id: '37',
   },
 ];
 export const STARSHIPS: SWStarShipsIF[] = [
@@ -2965,7 +2965,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-10T14:20:33.369000Z',
     edited: '2014-12-20T21:23:49.867000Z',
     url: 'https://swapi.dev/api/starships/2/',
-    id: 'starships',
+    id: '2',
   },
   {
     name: 'Star Destroyer',
@@ -2990,7 +2990,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-10T15:08:19.848000Z',
     edited: '2014-12-20T21:23:49.870000Z',
     url: 'https://swapi.dev/api/starships/3/',
-    id: 'starships',
+    id: '3',
   },
   {
     name: 'Sentinel-class landing craft',
@@ -3011,7 +3011,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-10T15:48:00.586000Z',
     edited: '2014-12-20T21:23:49.873000Z',
     url: 'https://swapi.dev/api/starships/5/',
-    id: 'starships',
+    id: '5',
   },
   {
     name: 'Death Star',
@@ -3033,7 +3033,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-10T16:36:50.509000Z',
     edited: '2014-12-20T21:26:24.783000Z',
     url: 'https://swapi.dev/api/starships/9/',
-    id: 'starships',
+    id: '9',
   },
   {
     name: 'Millennium Falcon',
@@ -3063,7 +3063,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-10T16:59:45.094000Z',
     edited: '2014-12-20T21:23:49.880000Z',
     url: 'https://swapi.dev/api/starships/10/',
-    id: 'starships',
+    id: '10',
   },
   {
     name: 'Y-wing',
@@ -3088,7 +3088,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-12T11:00:39.817000Z',
     edited: '2014-12-20T21:23:49.883000Z',
     url: 'https://swapi.dev/api/starships/11/',
-    id: 'starships',
+    id: '11',
   },
   {
     name: 'X-wing',
@@ -3118,7 +3118,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-12T11:19:05.340000Z',
     edited: '2014-12-20T21:23:49.886000Z',
     url: 'https://swapi.dev/api/starships/12/',
-    id: 'starships',
+    id: '12',
   },
   {
     name: 'TIE Advanced x1',
@@ -3139,7 +3139,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-12T11:21:32.991000Z',
     edited: '2014-12-20T21:23:49.889000Z',
     url: 'https://swapi.dev/api/starships/13/',
-    id: 'starships',
+    id: '13',
   },
   {
     name: 'Executor',
@@ -3160,7 +3160,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-15T12:31:42.547000Z',
     edited: '2014-12-20T21:23:49.893000Z',
     url: 'https://swapi.dev/api/starships/15/',
-    id: 'starships',
+    id: '15',
   },
   {
     name: 'Rebel transport',
@@ -3181,7 +3181,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-15T12:34:52.264000Z',
     edited: '2014-12-20T21:23:49.895000Z',
     url: 'https://swapi.dev/api/starships/17/',
-    id: 'starships',
+    id: '17',
   },
   {
     name: 'Slave 1',
@@ -3202,7 +3202,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-15T13:00:56.332000Z',
     edited: '2014-12-20T21:23:49.897000Z',
     url: 'https://swapi.dev/api/starships/21/',
-    id: 'starships',
+    id: '21',
   },
   {
     name: 'Imperial shuttle',
@@ -3227,7 +3227,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-15T13:04:47.235000Z',
     edited: '2014-12-20T21:23:49.900000Z',
     url: 'https://swapi.dev/api/starships/22/',
-    id: 'starships',
+    id: '22',
   },
   {
     name: 'EF76 Nebulon-B escort frigate',
@@ -3248,7 +3248,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-15T13:06:30.813000Z',
     edited: '2014-12-20T21:23:49.902000Z',
     url: 'https://swapi.dev/api/starships/23/',
-    id: 'starships',
+    id: '23',
   },
   {
     name: 'Calamari Cruiser',
@@ -3269,7 +3269,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-18T10:54:57.804000Z',
     edited: '2014-12-20T21:23:49.904000Z',
     url: 'https://swapi.dev/api/starships/27/',
-    id: 'starships',
+    id: '27',
   },
   {
     name: 'A-wing',
@@ -3290,7 +3290,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-18T11:16:34.542000Z',
     edited: '2014-12-20T21:23:49.907000Z',
     url: 'https://swapi.dev/api/starships/28/',
-    id: 'starships',
+    id: '28',
   },
   {
     name: 'B-wing',
@@ -3311,7 +3311,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-18T11:18:04.763000Z',
     edited: '2014-12-20T21:23:49.909000Z',
     url: 'https://swapi.dev/api/starships/29/',
-    id: 'starships',
+    id: '29',
   },
   {
     name: 'Republic Cruiser',
@@ -3332,7 +3332,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-19T17:01:31.488000Z',
     edited: '2014-12-20T21:23:49.912000Z',
     url: 'https://swapi.dev/api/starships/31/',
-    id: 'starships',
+    id: '31',
   },
   {
     name: 'Droid control ship',
@@ -3357,7 +3357,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-19T17:04:06.323000Z',
     edited: '2014-12-20T21:23:49.915000Z',
     url: 'https://swapi.dev/api/starships/32/',
-    id: 'starships',
+    id: '32',
   },
   {
     name: 'Naboo fighter',
@@ -3382,7 +3382,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-19T17:39:17.582000Z',
     edited: '2014-12-20T21:23:49.917000Z',
     url: 'https://swapi.dev/api/starships/39/',
-    id: 'starships',
+    id: '39',
   },
   {
     name: 'Naboo Royal Starship',
@@ -3404,7 +3404,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-19T17:45:03.506000Z',
     edited: '2014-12-20T21:23:49.919000Z',
     url: 'https://swapi.dev/api/starships/40/',
-    id: 'starships',
+    id: '40',
   },
   {
     name: 'Scimitar',
@@ -3425,7 +3425,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T09:39:56.116000Z',
     edited: '2014-12-20T21:23:49.922000Z',
     url: 'https://swapi.dev/api/starships/41/',
-    id: 'starships',
+    id: '41',
   },
   {
     name: 'J-type diplomatic barge',
@@ -3447,7 +3447,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T11:05:51.237000Z',
     edited: '2014-12-20T21:23:49.925000Z',
     url: 'https://swapi.dev/api/starships/43/',
-    id: 'starships',
+    id: '43',
   },
   {
     name: 'AA-9 Coruscant freighter',
@@ -3468,7 +3468,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T17:24:23.509000Z',
     edited: '2014-12-20T21:23:49.928000Z',
     url: 'https://swapi.dev/api/starships/47/',
-    id: 'starships',
+    id: '47',
   },
   {
     name: 'Jedi starfighter',
@@ -3492,7 +3492,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T17:35:23.906000Z',
     edited: '2014-12-20T21:23:49.930000Z',
     url: 'https://swapi.dev/api/starships/48/',
-    id: 'starships',
+    id: '48',
   },
   {
     name: 'H-type Nubian yacht',
@@ -3513,7 +3513,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T17:46:46.847000Z',
     edited: '2014-12-20T21:23:49.932000Z',
     url: 'https://swapi.dev/api/starships/49/',
-    id: 'starships',
+    id: '49',
   },
   {
     name: 'Republic Assault ship',
@@ -3534,7 +3534,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T18:08:42.926000Z',
     edited: '2014-12-20T21:23:49.935000Z',
     url: 'https://swapi.dev/api/starships/52/',
-    id: 'starships',
+    id: '52',
   },
   {
     name: 'Solar Sailer',
@@ -3555,7 +3555,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T18:37:56.969000Z',
     edited: '2014-12-20T21:23:49.937000Z',
     url: 'https://swapi.dev/api/starships/58/',
-    id: 'starships',
+    id: '58',
   },
   {
     name: 'Trade Federation cruiser',
@@ -3579,7 +3579,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T19:40:21.902000Z',
     edited: '2014-12-20T21:23:49.941000Z',
     url: 'https://swapi.dev/api/starships/59/',
-    id: 'starships',
+    id: '59',
   },
   {
     name: 'Theta-class T-2c shuttle',
@@ -3600,7 +3600,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T19:48:40.409000Z',
     edited: '2014-12-20T21:23:49.944000Z',
     url: 'https://swapi.dev/api/starships/61/',
-    id: 'starships',
+    id: '61',
   },
   {
     name: 'Republic attack cruiser',
@@ -3621,7 +3621,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T19:52:56.232000Z',
     edited: '2014-12-20T21:23:49.946000Z',
     url: 'https://swapi.dev/api/starships/63/',
-    id: 'starships',
+    id: '63',
   },
   {
     name: 'Naboo star skiff',
@@ -3646,7 +3646,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T19:55:15.396000Z',
     edited: '2014-12-20T21:23:49.948000Z',
     url: 'https://swapi.dev/api/starships/64/',
-    id: 'starships',
+    id: '64',
   },
   {
     name: 'Jedi Interceptor',
@@ -3670,7 +3670,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T19:56:57.468000Z',
     edited: '2014-12-20T21:23:49.951000Z',
     url: 'https://swapi.dev/api/starships/65/',
-    id: 'starships',
+    id: '65',
   },
   {
     name: 'arc-170',
@@ -3691,7 +3691,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T20:03:48.603000Z',
     edited: '2014-12-20T21:23:49.953000Z',
     url: 'https://swapi.dev/api/starships/66/',
-    id: 'starships',
+    id: '66',
   },
   {
     name: 'Banking clan frigte',
@@ -3712,7 +3712,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T20:07:11.538000Z',
     edited: '2014-12-20T21:23:49.956000Z',
     url: 'https://swapi.dev/api/starships/68/',
-    id: 'starships',
+    id: '68',
   },
   {
     name: 'Belbullab-22 starfighter',
@@ -3736,7 +3736,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T20:38:05.031000Z',
     edited: '2014-12-20T21:23:49.959000Z',
     url: 'https://swapi.dev/api/starships/74/',
-    id: 'starships',
+    id: '74',
   },
   {
     name: 'V-wing',
@@ -3757,7 +3757,7 @@ export const STARSHIPS: SWStarShipsIF[] = [
     created: '2014-12-20T20:43:04.349000Z',
     edited: '2014-12-20T21:23:49.961000Z',
     url: 'https://swapi.dev/api/starships/75/',
-    id: 'starships',
+    id: '75',
   },
 ];
 export const VEHICLES: SWVehicleIF[] = [
@@ -3778,7 +3778,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-10T15:36:25.724000Z',
     edited: '2014-12-20T21:30:21.661000Z',
     url: 'https://swapi.dev/api/vehicles/4/',
-    id: 'vehicles',
+    id: '4',
   },
   {
     name: 'T-16 skyhopper',
@@ -3797,7 +3797,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-10T16:01:52.434000Z',
     edited: '2014-12-20T21:30:21.665000Z',
     url: 'https://swapi.dev/api/vehicles/6/',
-    id: 'vehicles',
+    id: '6',
   },
   {
     name: 'X-34 landspeeder',
@@ -3816,7 +3816,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-10T16:13:52.586000Z',
     edited: '2014-12-20T21:30:21.668000Z',
     url: 'https://swapi.dev/api/vehicles/7/',
-    id: 'vehicles',
+    id: '7',
   },
   {
     name: 'TIE/LN starfighter',
@@ -3839,7 +3839,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-10T16:33:52.860000Z',
     edited: '2014-12-20T21:30:21.670000Z',
     url: 'https://swapi.dev/api/vehicles/8/',
-    id: 'vehicles',
+    id: '8',
   },
   {
     name: 'Snowspeeder',
@@ -3861,7 +3861,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-15T12:22:12Z',
     edited: '2014-12-20T21:30:21.672000Z',
     url: 'https://swapi.dev/api/vehicles/14/',
-    id: 'vehicles',
+    id: '14',
   },
   {
     name: 'TIE bomber',
@@ -3880,7 +3880,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-15T12:33:15.838000Z',
     edited: '2014-12-20T21:30:21.675000Z',
     url: 'https://swapi.dev/api/vehicles/16/',
-    id: 'vehicles',
+    id: '16',
   },
   {
     name: 'AT-AT',
@@ -3899,7 +3899,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-15T12:38:25.937000Z',
     edited: '2014-12-20T21:30:21.677000Z',
     url: 'https://swapi.dev/api/vehicles/18/',
-    id: 'vehicles',
+    id: '18',
   },
   {
     name: 'AT-ST',
@@ -3918,7 +3918,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-15T12:46:42.384000Z',
     edited: '2014-12-20T21:30:21.679000Z',
     url: 'https://swapi.dev/api/vehicles/19/',
-    id: 'vehicles',
+    id: '19',
   },
   {
     name: 'Storm IV Twin-Pod cloud car',
@@ -3937,7 +3937,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-15T12:58:50.530000Z',
     edited: '2014-12-20T21:30:21.681000Z',
     url: 'https://swapi.dev/api/vehicles/20/',
-    id: 'vehicles',
+    id: '20',
   },
   {
     name: 'Sail barge',
@@ -3956,7 +3956,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-18T10:44:14.217000Z',
     edited: '2014-12-20T21:30:21.684000Z',
     url: 'https://swapi.dev/api/vehicles/24/',
-    id: 'vehicles',
+    id: '24',
   },
   {
     name: 'Bantha-II cargo skiff',
@@ -3975,7 +3975,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-18T10:48:03.208000Z',
     edited: '2014-12-20T21:30:21.688000Z',
     url: 'https://swapi.dev/api/vehicles/25/',
-    id: 'vehicles',
+    id: '25',
   },
   {
     name: 'TIE/IN interceptor',
@@ -3994,7 +3994,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-18T10:50:28.225000Z',
     edited: '2014-12-20T21:30:21.691000Z',
     url: 'https://swapi.dev/api/vehicles/26/',
-    id: 'vehicles',
+    id: '26',
   },
   {
     name: 'Imperial Speeder Bike',
@@ -4016,7 +4016,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-18T11:20:04.625000Z',
     edited: '2014-12-20T21:30:21.693000Z',
     url: 'https://swapi.dev/api/vehicles/30/',
-    id: 'vehicles',
+    id: '30',
   },
   {
     name: 'Vulture Droid',
@@ -4035,7 +4035,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-19T17:09:53.584000Z',
     edited: '2014-12-20T21:30:21.697000Z',
     url: 'https://swapi.dev/api/vehicles/33/',
-    id: 'vehicles',
+    id: '33',
   },
   {
     name: 'Multi-Troop Transport',
@@ -4054,7 +4054,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-19T17:12:04.400000Z',
     edited: '2014-12-20T21:30:21.700000Z',
     url: 'https://swapi.dev/api/vehicles/34/',
-    id: 'vehicles',
+    id: '34',
   },
   {
     name: 'Armored Assault Tank',
@@ -4073,7 +4073,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-19T17:13:29.799000Z',
     edited: '2014-12-20T21:30:21.703000Z',
     url: 'https://swapi.dev/api/vehicles/35/',
-    id: 'vehicles',
+    id: '35',
   },
   {
     name: 'Single Trooper Aerial Platform',
@@ -4092,7 +4092,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-19T17:15:09.511000Z',
     edited: '2014-12-20T21:30:21.705000Z',
     url: 'https://swapi.dev/api/vehicles/36/',
-    id: 'vehicles',
+    id: '36',
   },
   {
     name: 'C-9979 landing craft',
@@ -4111,7 +4111,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-19T17:20:36.373000Z',
     edited: '2014-12-20T21:30:21.707000Z',
     url: 'https://swapi.dev/api/vehicles/37/',
-    id: 'vehicles',
+    id: '37',
   },
   {
     name: 'Tribubble bongo',
@@ -4133,7 +4133,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-19T17:37:37.924000Z',
     edited: '2014-12-20T21:30:21.710000Z',
     url: 'https://swapi.dev/api/vehicles/38/',
-    id: 'vehicles',
+    id: '38',
   },
   {
     name: 'Sith speeder',
@@ -4152,7 +4152,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T10:09:56.095000Z',
     edited: '2014-12-20T21:30:21.712000Z',
     url: 'https://swapi.dev/api/vehicles/42/',
-    id: 'vehicles',
+    id: '42',
   },
   {
     name: 'Zephyr-G swoop bike',
@@ -4171,7 +4171,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T16:24:16.026000Z',
     edited: '2014-12-20T21:30:21.714000Z',
     url: 'https://swapi.dev/api/vehicles/44/',
-    id: 'vehicles',
+    id: '44',
   },
   {
     name: 'Koro-2 Exodrive airspeeder',
@@ -4190,7 +4190,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T17:17:33.526000Z',
     edited: '2014-12-20T21:30:21.716000Z',
     url: 'https://swapi.dev/api/vehicles/45/',
-    id: 'vehicles',
+    id: '45',
   },
   {
     name: 'XJ-6 airspeeder',
@@ -4209,7 +4209,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T17:19:19.991000Z',
     edited: '2014-12-20T21:30:21.719000Z',
     url: 'https://swapi.dev/api/vehicles/46/',
-    id: 'vehicles',
+    id: '46',
   },
   {
     name: 'LAAT/i',
@@ -4228,7 +4228,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T18:01:21.014000Z',
     edited: '2014-12-20T21:30:21.723000Z',
     url: 'https://swapi.dev/api/vehicles/50/',
-    id: 'vehicles',
+    id: '50',
   },
   {
     name: 'LAAT/c',
@@ -4247,7 +4247,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T18:02:46.802000Z',
     edited: '2014-12-20T21:30:21.725000Z',
     url: 'https://swapi.dev/api/vehicles/51/',
-    id: 'vehicles',
+    id: '51',
   },
   {
     name: 'AT-TE',
@@ -4266,7 +4266,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T18:10:07.560000Z',
     edited: '2014-12-20T21:30:21.728000Z',
     url: 'https://swapi.dev/api/vehicles/53/',
-    id: 'vehicles',
+    id: '53',
   },
   {
     name: 'SPHA',
@@ -4285,7 +4285,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T18:12:32.315000Z',
     edited: '2014-12-20T21:30:21.731000Z',
     url: 'https://swapi.dev/api/vehicles/54/',
-    id: 'vehicles',
+    id: '54',
   },
   {
     name: 'Flitknot speeder',
@@ -4304,7 +4304,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T18:15:20.312000Z',
     edited: '2014-12-20T21:30:21.735000Z',
     url: 'https://swapi.dev/api/vehicles/55/',
-    id: 'vehicles',
+    id: '55',
   },
   {
     name: 'Neimoidian shuttle',
@@ -4323,7 +4323,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T18:25:44.912000Z',
     edited: '2014-12-20T21:30:21.739000Z',
     url: 'https://swapi.dev/api/vehicles/56/',
-    id: 'vehicles',
+    id: '56',
   },
   {
     name: 'Geonosian starfighter',
@@ -4342,7 +4342,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T18:34:12.541000Z',
     edited: '2014-12-20T21:30:21.742000Z',
     url: 'https://swapi.dev/api/vehicles/57/',
-    id: 'vehicles',
+    id: '57',
   },
   {
     name: 'Tsmeu-6 personal wheel bike',
@@ -4361,7 +4361,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T19:43:54.870000Z',
     edited: '2014-12-20T21:30:21.745000Z',
     url: 'https://swapi.dev/api/vehicles/60/',
-    id: 'vehicles',
+    id: '60',
   },
   {
     name: 'Emergency Firespeeder',
@@ -4380,7 +4380,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T19:50:58.559000Z',
     edited: '2014-12-20T21:30:21.749000Z',
     url: 'https://swapi.dev/api/vehicles/62/',
-    id: 'vehicles',
+    id: '62',
   },
   {
     name: 'Droid tri-fighter',
@@ -4399,7 +4399,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T20:05:19.992000Z',
     edited: '2014-12-20T21:30:21.752000Z',
     url: 'https://swapi.dev/api/vehicles/67/',
-    id: 'vehicles',
+    id: '67',
   },
   {
     name: 'Oevvaor jet catamaran',
@@ -4418,7 +4418,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T20:20:53.931000Z',
     edited: '2014-12-20T21:30:21.756000Z',
     url: 'https://swapi.dev/api/vehicles/69/',
-    id: 'vehicles',
+    id: '69',
   },
   {
     name: 'Raddaugh Gnasp fluttercraft',
@@ -4437,7 +4437,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T20:21:55.648000Z',
     edited: '2014-12-20T21:30:21.759000Z',
     url: 'https://swapi.dev/api/vehicles/70/',
-    id: 'vehicles',
+    id: '70',
   },
   {
     name: 'Clone turbo tank',
@@ -4456,7 +4456,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T20:24:45.587000Z',
     edited: '2014-12-20T21:30:21.762000Z',
     url: 'https://swapi.dev/api/vehicles/71/',
-    id: 'vehicles',
+    id: '71',
   },
   {
     name: 'Corporate Alliance tank droid',
@@ -4475,7 +4475,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T20:26:55.522000Z',
     edited: '2014-12-20T21:30:21.765000Z',
     url: 'https://swapi.dev/api/vehicles/72/',
-    id: 'vehicles',
+    id: '72',
   },
   {
     name: 'Droid gunship',
@@ -4494,7 +4494,7 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T20:32:05.687000Z',
     edited: '2014-12-20T21:30:21.768000Z',
     url: 'https://swapi.dev/api/vehicles/73/',
-    id: 'vehicles',
+    id: '73',
   },
   {
     name: 'AT-RT',
@@ -4513,6 +4513,6 @@ export const VEHICLES: SWVehicleIF[] = [
     created: '2014-12-20T20:47:49.189000Z',
     edited: '2014-12-20T21:30:21.772000Z',
     url: 'https://swapi.dev/api/vehicles/76/',
-    id: 'vehicles',
+    id: '76',
   },
 ];

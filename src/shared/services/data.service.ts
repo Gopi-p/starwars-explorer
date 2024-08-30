@@ -35,6 +35,11 @@ export class DataService {
         fetchHandler<SWVehicleIF>(this.http, 'vehicles'),
         fetchHandler<SWStarShipsIF>(this.http, 'starships'),
       ]);
+      // console.log('@@  films: ', films);
+      // console.log('@@  starShips: ', starShips);
+      // console.log('@@  vehicles: ', vehicles);
+      // console.log('@@  species: ', species);
+      // console.log('@@  people: ', people);
 
       this.people = people;
       this.films = films;
