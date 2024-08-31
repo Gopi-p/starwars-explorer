@@ -1,1 +1,177 @@
-<p>People: {{ peopleDetails?.name }}</p>
+<div class="grid nested-grid">
+  <div class="col-12">
+    <div class="p-card p-3 border-dotted border-primary-500 border-2">
+      <div class="flex gap-3 justify-content-between align-items-center">
+        <h1>{{ peopleDetails?.name }}</h1>
+        <p-button
+          label="Go back"
+          severity="secondary"
+          routerLink="/people"
+          [outlined]="true"
+          icon="pi pi-arrow-left"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-4">
+    <div class="p-card p-4 h-full">
+      <h2>Basic Info</h2>
+      <p-divider />
+      <table>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Birth year</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">{{ peopleDetails?.birth_year }}</h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Gender</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.gender | uppercase }}
+            </h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Species</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{
+                ((peopleDetails?.species)![0] | species : "name") ?? "Unknown"
+              }}
+            </h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Skin color</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.skin_color | titlecase }}
+            </h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Hair color</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.hair_color | titlecase }}
+            </h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Eye color</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.eye_color | titlecase }}
+            </h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Height</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.height }}
+            </h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Mass</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.mass }}
+            </h4>
+          </td>
+        </tr>
+      </table>
+      <h2 class="mt-4">Metadata</h2>
+      <p-divider />
+      <table>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Created</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.created | date : "dd-MM-yyyy" }}
+            </h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4 class="label-text mb-2">Modified</h4>
+          </td>
+          <td>
+            <h4 class="label-text mb-2">
+              {{ peopleDetails?.edited | date : "dd-MM-yyyy" }}
+            </h4>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="col-12 md:col-6 lg:col-8">
+    <div class="grid">
+      <div class="col-12">
+        <div class="p-card p-4">
+          <h2>Films</h2>
+          <p-divider />
+          @for (item of peopleDetails?.films; track $index) {
+
+          <h4 class="label-text mb-2">
+            {{ $index + 1 }}. {{ item | films : "name" }}
+          </h4>
+          }
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="grid">
+          <div class="col-12 lg:col-6">
+            <div class="p-card p-4 h-full">
+              <h2>Vehicles</h2>
+              <p-divider />
+              @if((peopleDetails?.vehicles?.length ?? 0) > 0 ){ @for (item of
+              peopleDetails?.vehicles; track $index) {
+              <h4 class="label-text mb-2">
+                {{ $index + 1 }}. {{ item | vehicles : "name" }}
+              </h4>
+              } }@else {
+              <h2>N/A</h2>
+              }
+            </div>
+          </div>
+          <div class="col-12 lg:col-6">
+            <div class="p-card p-4 h-full">
+              <h2>Starships</h2>
+              <p-divider />
+              @if((peopleDetails?.starships?.length ?? 0) > 0 ){ @for (item of
+              peopleDetails?.starships; track $index) {
+              <h4 class="label-text mb-2">
+                {{ $index + 1 }}. {{ item | starships : "name" }}
+              </h4>
+              } }@else {
+              <h2>N/A</h2>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

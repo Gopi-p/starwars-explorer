@@ -110,53 +110,51 @@
   <div class="col-12 sm:col">
     <div class="p-card px-3 py-4 h-full">
       <h4 class="mb-3">StarWar People List</h4>
-      <div class="card">
-        <p-table
-          [value]="people"
-          styleClass="p-datatable-gridlines"
-          [tableStyle]="{ 'min-width': '21rem' }"
-          [scrollable]="true"
-          [scrollHeight]="tableScrollHeight + 'px'"
-          [paginator]="true"
-          [rows]="10"
-          [rowHover]="true"
-        >
-          <ng-template pTemplate="header">
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Species</th>
-              <th>Birth Year</th>
-              <th>Gender</th>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="body" let-people>
-            <tr class="p-selectable-row" (click)="onClickPeople(people.id)">
-              <td>{{ people.id }}</td>
-              <td>{{ people.name }}</td>
-              <td>{{ (people.species[0] | species : "name") ?? "Unknown" }}</td>
-              <td>{{ people.birth_year }}</td>
-              <td>
-                <p-tag
-                  [value]="people.gender | titlecase"
-                  [severity]="getGenderColor(people.gender)"
-                />
-              </td>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="emptymessage">
-            <tr>
-              <td colspan="5" style="text-align: center; padding: 100px 0">
-                <i class="pi pi-objects-column" style="font-size: 3rem"></i>
-                <p class="proxima-14 semi-bold mt-2">
-                  No character found for applied filter. <br />
-                  Try changing filter.
-                </p>
-              </td>
-            </tr>
-          </ng-template>
-        </p-table>
-      </div>
+      <p-table
+        [value]="people"
+        styleClass="p-datatable-gridlines"
+        [tableStyle]="{ 'min-width': '21rem' }"
+        [scrollable]="true"
+        [scrollHeight]="tableScrollHeight + 'px'"
+        [paginator]="true"
+        [rows]="10"
+        [rowHover]="true"
+      >
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Birth Year</th>
+            <th>Gender</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-people>
+          <tr class="p-selectable-row" (click)="onClickPeople(people.id)">
+            <td>{{ people.id }}</td>
+            <td>{{ people.name }}</td>
+            <td>{{ (people.species[0] | species : "name") ?? "Unknown" }}</td>
+            <td>{{ people.birth_year }}</td>
+            <td>
+              <p-tag
+                [value]="people.gender | titlecase"
+                [severity]="getGenderColor(people.gender)"
+              />
+            </td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+          <tr>
+            <td colspan="5" style="text-align: center; padding: 100px 0">
+              <i class="pi pi-objects-column" style="font-size: 3rem"></i>
+              <p class="proxima-14 semi-bold mt-2">
+                No character found for applied filter. <br />
+                Try changing filter.
+              </p>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
     </div>
   </div>
 </div>

@@ -63,8 +63,8 @@ export class CharactersComponent implements OnInit {
   starShipNames: SelectItemIF[];
   selectedStarShips!: SelectItemIF[];
 
-  fromYear: number = 5;
-  toYear: number = 1000;
+  fromYear: string = '5';
+  toYear: string = '1000';
 
   isAllTimeBirthYear: boolean = true;
   isFilterApplied: boolean = false;
@@ -106,18 +106,10 @@ export class CharactersComponent implements OnInit {
   }
 
   onChangeBY() {
-    this.birthRangeError = this.fromYear > this.toYear;
-    this.isFilterApplied = !this.isAllTimeBirthYear;
-    let filteredPeople = this.dataService.people;
+    this.birthRangeError = Number(this.fromYear) > Number(this.toYear);
 
-    if (!this.isAllTimeBirthYear) {
-      filteredPeople = filteredPeople.filter((people) => {
-        const year = extractYearFromBirthYear(people.birth_year);
-        return year >= this.fromYear && year <= this.toYear;
-      });
-    }
-
-    this.people = filteredPeople;
+    if (this.birthRangeError) return;
+    this.onChangeFilter();
   }
 
   onChangeFilter() {
@@ -150,6 +142,14 @@ export class CharactersComponent implements OnInit {
         this.selectedStarShips.map((ship) => ship.code)
       );
       this.isFilterApplied = true;
+    }
+
+    if (!this.isAllTimeBirthYear && !this.birthRangeError) {
+      this.isFilterApplied = true;
+      filteredPeople = filteredPeople.filter((people) => {
+        const year = extractYearFromBirthYear(people.birth_year);
+        return year >= Number(this.fromYear) && year <= Number(this.toYear);
+      });
     }
 
     this.people = filteredPeople;

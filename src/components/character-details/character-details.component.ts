@@ -1,14 +1,27 @@
 //Core
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 //Shared
 import { DataService } from '../../shared/services/data.service';
 import { SWPeopleIF } from '../../shared/interfaces/people.interface';
+import { CommonModule, DatePipe } from '@angular/common';
+import { SpeciesPipe } from '../../shared/pipes/species.pipe';
+import { FilmsPipe } from '../../shared/pipes/films.pipe';
+
+//PrimeNG
+import { ButtonModule } from 'primeng/button';
+import { DividerModule } from 'primeng/divider';
+import { StarShipsPipe } from '../../shared/pipes/starships.pipe';
+import { VehiclesPipe } from '../../shared/pipes/vehicles.pipe';
+
+const PRIMENG = [ButtonModule, DividerModule];
+const CORE = [RouterLink, CommonModule, DatePipe];
+const SHARED = [SpeciesPipe, FilmsPipe, StarShipsPipe, VehiclesPipe];
 @Component({
   selector: 'app-character-details',
   standalone: true,
-  imports: [],
+  imports: [...CORE, ...PRIMENG, ...SHARED],
   templateUrl: './character-details.component.html',
   styleUrl: './character-details.component.scss',
 })
@@ -31,5 +44,7 @@ export class CharacterDetailsComponent implements OnInit {
 
   getPeopleDetails() {
     this.peopleDetails = this.dataService.people.find((i) => i.id == this.id);
+
+    console.log('@@  this.peopleDetails: ', this.peopleDetails);
   }
 }
