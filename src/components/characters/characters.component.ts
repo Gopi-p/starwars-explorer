@@ -1,5 +1,5 @@
 //Core
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -70,6 +70,15 @@ export class CharactersComponent implements OnInit {
   isFilterApplied: boolean = false;
   birthRangeError: boolean = false;
 
+  tableScrollHeight: number = 294;
+  filterScrollHeight: number = 294;
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event: any) {
+    this.tableScrollHeight = window.innerHeight - 330;
+    this.filterScrollHeight = window.innerHeight - 324;
+  }
+
   constructor(private dataService: DataService, private router: Router) {
     this.filmTitles = filmTitlesFO;
     this.speciesNames = speciesNamesFO;
@@ -78,6 +87,8 @@ export class CharactersComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.filterScrollHeight = window.innerHeight - 324;
+    this.tableScrollHeight = window.innerHeight - 330;
     this.onChangeFilter();
   }
 
