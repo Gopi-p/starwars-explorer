@@ -115,7 +115,8 @@ export class CharactersComponent implements OnInit {
   onChangeFilter() {
     let filteredPeople: SWPeopleIF[] = this.dataService.people;
     this.isFilterApplied = false;
-    if (this.selectedFilms) {
+
+    if (this.selectedFilms?.length > 0) {
       filteredPeople = filterPeopleByFilms(
         filteredPeople,
         this.selectedFilms.map((film) => film.code)
@@ -129,14 +130,14 @@ export class CharactersComponent implements OnInit {
       );
       this.isFilterApplied = true;
     }
-    if (this.selectedVehicles) {
+    if (this.selectedVehicles?.length > 0) {
       filteredPeople = filterPeopleByVehicles(
         filteredPeople,
         this.selectedVehicles.map((vehicle) => vehicle.code)
       );
       this.isFilterApplied = true;
     }
-    if (this.selectedStarShips) {
+    if (this.selectedStarShips?.length > 0) {
       filteredPeople = filterPeopleByStarShips(
         filteredPeople,
         this.selectedStarShips.map((ship) => ship.code)
@@ -151,7 +152,6 @@ export class CharactersComponent implements OnInit {
         return year >= Number(this.fromYear) && year <= Number(this.toYear);
       });
     }
-
     this.people = filteredPeople;
   }
 
@@ -162,7 +162,6 @@ export class CharactersComponent implements OnInit {
     this.selectedVehicles = [];
     this.selectedStarShips = [];
     this.onChangeFilter();
-    this.onChangeBY();
   }
 
   onClickPeople(id: string) {
