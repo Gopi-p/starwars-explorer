@@ -23,4 +23,11 @@ export const routes: Routes = [
       { path: '', redirectTo: 'people', pathMatch: 'full' },
     ],
   },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./../components/page-not-found/page-not-found.component').then(
+        (c) => c.PageNotFoundComponent
+      ),
+  },
 ];
