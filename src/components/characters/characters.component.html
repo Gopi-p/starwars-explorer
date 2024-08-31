@@ -1,1 +1,87 @@
-<p>characters works!</p>
+<div class="grid m-0">
+  <div class="col lg:col-fixed md:w-21rem">
+    <div class="p-3 border-round-md border-1 border-blue-500 bg-white">
+      <h4 class="mb-3">Filters</h4>
+      <div class="flex flex-column mb-4">
+        <label for="email" class="mb-2">Films</label>
+        <p-multiSelect
+          [options]="filmTitles"
+          [(ngModel)]="selectedFilms"
+          optionLabel="name"
+          placeholder="Select films"
+          class="w-full block"
+        />
+      </div>
+      <div class="flex flex-column mb-4">
+        <label for="email" class="mb-2">Species</label>
+        <p-multiSelect
+          [options]="filmTitles"
+          [(ngModel)]="selectedFilms"
+          optionLabel="name"
+          placeholder="Select species"
+          class="w-full block"
+        />
+      </div>
+      <div class="flex flex-column mb-4">
+        <label for="email" class="mb-2">Vehicles</label>
+        <p-multiSelect
+          [options]="filmTitles"
+          [(ngModel)]="selectedFilms"
+          optionLabel="name"
+          placeholder="Select vehicles"
+          class="w-full block"
+        />
+      </div>
+      <div class="flex flex-column mb-4">
+        <label for="email" class="mb-2">Star Ships</label>
+        <p-multiSelect
+          [options]="filmTitles"
+          [(ngModel)]="selectedFilms"
+          optionLabel="name"
+          placeholder="Select star ships"
+          class="w-full block"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="p-3 border-round-md border-1 border-blue-500 bg-white">
+      <h4 class="mb-3">StarWar People List</h4>
+      <div class="card">
+        <p-table
+          [value]="people"
+          styleClass="p-datatable-gridlines"
+          [tableStyle]="{ 'min-width': 'max-content' }"
+          [scrollable]="true"
+          [paginator]="true"
+          [rows]="10"
+          [rowHover]="true"
+        >
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Species</th>
+              <th>Birth Year</th>
+              <th>Gender</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-people>
+            <tr class="p-selectable-row" (click)="onClickPeople(people.id)">
+              <td>{{ people.id }}</td>
+              <td>{{ people.name }}</td>
+              <td>{{ (people.species[0] | species : "name") ?? "Unknown" }}</td>
+              <td>{{ people.birth_year }}</td>
+              <td>
+                <p-tag
+                  [value]="people.gender | titlecase"
+                  [severity]="getGender(people.gender)"
+                />
+              </td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
+  </div>
+</div>
