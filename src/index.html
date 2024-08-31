@@ -10,8 +10,53 @@
       rel="stylesheet"
       href="https://unpkg.com/primeflex@latest/primeflex.css"
     />
+    <style type="text/css">
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #121212;
+      }
+      .app-name {
+        margin-top: 12px;
+        font-size: 26px;
+        color: #ffffff;
+        letter-spacing: 3px;
+      }
+      .loading-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .loader {
+        border: 4px solid #18181b;
+        border-top: 4px solid #60a5fa;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
-    <app-root></app-root>
+    <app-root>
+      <div class="center">
+        <div class="loading-content">
+          <div class="loader"></div>
+          <h2 class="app-name">Star Wars Characters</h2>
+        </div>
+      </div>
+    </app-root>
   </body>
 </html>
