@@ -1,8 +1,9 @@
+@if(peopleDetails){
 <div class="grid nested-grid">
   <div class="col-12">
     <div class="p-card p-3 border-dotted border-primary-500 border-2">
       <div class="flex gap-3 justify-content-between align-items-center">
-        <h1>{{ peopleDetails?.name }}</h1>
+        <h1>{{ peopleDetails.name }}</h1>
         <p-button
           label="Go back"
           severity="secondary"
@@ -24,7 +25,7 @@
             <h4 class="label-text mb-2">Birth year</h4>
           </td>
           <td>
-            <h4 class="label-text mb-2">{{ peopleDetails?.birth_year }}</h4>
+            <h4 class="label-text mb-2">{{ peopleDetails.birth_year }}</h4>
           </td>
         </tr>
         <tr>
@@ -33,7 +34,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.gender | uppercase }}
+              {{ peopleDetails.gender | uppercase }}
             </h4>
           </td>
         </tr>
@@ -43,9 +44,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{
-                ((peopleDetails?.species)![0] | species : "name") ?? "Unknown"
-              }}
+              {{ (peopleDetails.species![0] | species : "name") ?? "Unknown" }}
             </h4>
           </td>
         </tr>
@@ -55,7 +54,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.skin_color | titlecase }}
+              {{ peopleDetails.skin_color | titlecase }}
             </h4>
           </td>
         </tr>
@@ -65,7 +64,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.hair_color | titlecase }}
+              {{ peopleDetails.hair_color | titlecase }}
             </h4>
           </td>
         </tr>
@@ -75,7 +74,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.eye_color | titlecase }}
+              {{ peopleDetails.eye_color | titlecase }}
             </h4>
           </td>
         </tr>
@@ -85,7 +84,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.height }}
+              {{ peopleDetails.height }}
             </h4>
           </td>
         </tr>
@@ -95,7 +94,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.mass }}
+              {{ peopleDetails.mass }}
             </h4>
           </td>
         </tr>
@@ -109,7 +108,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.created | date : "dd-MM-yyyy" }}
+              {{ peopleDetails.created | date : "dd-MM-yyyy" }}
             </h4>
           </td>
         </tr>
@@ -119,7 +118,7 @@
           </td>
           <td>
             <h4 class="label-text mb-2">
-              {{ peopleDetails?.edited | date : "dd-MM-yyyy" }}
+              {{ peopleDetails.edited | date : "dd-MM-yyyy" }}
             </h4>
           </td>
         </tr>
@@ -132,7 +131,7 @@
         <div class="p-card p-4">
           <h2>Films</h2>
           <p-divider />
-          @for (item of peopleDetails?.films; track $index) {
+          @for (item of peopleDetails.films; track $index) {
 
           <h4 class="label-text mb-2">
             {{ $index + 1 }}. {{ item | films : "name" }}
@@ -146,8 +145,8 @@
             <div class="p-card p-4 h-full">
               <h2>Vehicles</h2>
               <p-divider />
-              @if((peopleDetails?.vehicles?.length ?? 0) > 0 ){ @for (item of
-              peopleDetails?.vehicles; track $index) {
+              @if((peopleDetails.vehicles?.length ?? 0) > 0 ){ @for (item of
+              peopleDetails.vehicles; track $index) {
               <h4 class="label-text mb-2">
                 {{ $index + 1 }}. {{ item | vehicles : "name" }}
               </h4>
@@ -160,8 +159,8 @@
             <div class="p-card p-4 h-full">
               <h2>Starships</h2>
               <p-divider />
-              @if((peopleDetails?.starships?.length ?? 0) > 0 ){ @for (item of
-              peopleDetails?.starships; track $index) {
+              @if((peopleDetails.starships?.length ?? 0) > 0 ){ @for (item of
+              peopleDetails.starships; track $index) {
               <h4 class="label-text mb-2">
                 {{ $index + 1 }}. {{ item | starships : "name" }}
               </h4>
@@ -175,3 +174,21 @@
     </div>
   </div>
 </div>
+
+}@else {
+<div class="flex flex-column justify-content-center align-items-center">
+  <img
+    src="assets/images/item_not_found.svg"
+    alt="page not found"
+    width="200px"
+    class="mb-4"
+  />
+  <div class="text-center">
+    <h1 class="mb-3">Character not found</h1>
+    <p class="mb-3">
+      It looks like the the character that you're looking for is not available
+    </p>
+    <p-button label="Go home" routerLink="/"></p-button>
+  </div>
+</div>
+}

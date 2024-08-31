@@ -44,7 +44,5 @@ export class CharacterDetailsComponent implements OnInit {
 
   getPeopleDetails() {
     this.peopleDetails = this.dataService.people.find((i) => i.id == this.id);
-
-    console.log('@@  this.peopleDetails: ', this.peopleDetails);
   }
 }
