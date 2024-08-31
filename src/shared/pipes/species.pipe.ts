@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { DataService, extractIdFromUrl } from '../services/data.service';
 
 @Pipe({
   name: 'species',
@@ -10,10 +10,7 @@ export class SpeciesPipe implements PipeTransform {
 
   transform(value: string | null | undefined, arg: string): string {
     if (!value || !arg) return 'Unknown';
-    const regex = new RegExp(`/species/(\\d+)/`);
-    const match = value.match(regex);
-    const id = match ? match[1] : null;
-
+    const id = extractIdFromUrl(value, 'species');
     if (!id) return 'Unknown';
 
     const species = this.dataService.species.find((i) => i.id == id);

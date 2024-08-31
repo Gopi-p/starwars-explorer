@@ -51,3 +51,13 @@ export class DataService {
     }
   }
 }
+
+export function extractIdFromUrl(
+  url: string | undefined | null,
+  route: string
+) {
+  if (!url) return null;
+  const regex = new RegExp(`/${route}/(\\d+)/`);
+  const match = url.match(regex);
+  return match ? match[1] : null;
+}

@@ -1,15 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { forkJoin, lastValueFrom, map, switchMap } from 'rxjs';
+import { extractIdFromUrl } from '../services/data.service';
 
 const BASE_URL = 'https://swapi.dev/api/';
 
 export const fetchHandler = async <T>(
   http: HttpClient,
-  route: String
+  route: string
 ): Promise<T[]> => {
   try {
     const apiURL = `${BASE_URL}${route}/`;
-    const idRegex = new RegExp(`/(${route})/(\\d+)/`);
 
     const res: T[] = await lastValueFrom(
       http.get<any>(apiURL).pipe(
@@ -17,7 +17,7 @@ export const fetchHandler = async <T>(
           const totalItems = firstPage.count;
 
           const allResults = firstPage.results.map((item: any) => {
-            const id = item.url.match(idRegex)[1];
+            const id = extractIdFromUrl(item.url, route);
             return { ...item, id };
           });
 
@@ -35,7 +35,7 @@ export const fetchHandler = async <T>(
             map((pages) => {
               pages.forEach((page) => {
                 page.results.forEach((item: any) => {
-                  const id = item.url.match(idRegex)[1];
+                  const id = extractIdFromUrl(item.url, route);
                   allResults.push({ ...item, id });
                 });
               });
