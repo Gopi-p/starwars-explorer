@@ -61,3 +61,10 @@ export function extractIdFromUrl(
   const match = url.match(regex);
   return match ? match[1] : null;
 }
+
+export function extractYearFromBirthYear(
+  str: string | null | undefined
+): number {
+  if (!str || str === 'unknown') return 0;
+  return parseFloat(str.replace(/[^\d.]/g, ''));
+}

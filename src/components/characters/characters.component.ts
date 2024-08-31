@@ -13,8 +13,12 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { CheckboxModule } from 'primeng/checkbox';
+import { CardModule } from 'primeng/card';
 //Shared
-import { DataService } from '../../shared/services/data.service';
+import {
+  DataService,
+  extractYearFromBirthYear,
+} from '../../shared/services/data.service';
 import { SWPeopleIF } from '../../shared/interfaces/people.interface';
 import { SpeciesPipe } from '../../shared/pipes/species.pipe';
 import {
@@ -34,6 +38,7 @@ const PRIMENG = [
   InputGroupModule,
   InputGroupAddonModule,
   CheckboxModule,
+  CardModule,
 ];
 const SHARED = [SpeciesPipe];
 @Component({
@@ -47,21 +52,23 @@ export class CharactersComponent implements OnInit {
   people: SWPeopleIF[] = [];
 
   filmTitles: SelectItemIF[];
-  selectedFilms: SelectItemIF[] = [];
+  selectedFilms!: SelectItemIF[];
 
   speciesNames: SelectItemIF[];
-  selectedSpecies: SelectItemIF[] = [];
+  selectedSpecies!: SelectItemIF[];
 
   vehicleNames: SelectItemIF[];
-  selectedVehicles: SelectItemIF[] = [];
+  selectedVehicles!: SelectItemIF[];
 
   starShipNames: SelectItemIF[];
-  selectedStarShips: SelectItemIF[] = [];
+  selectedStarShips!: SelectItemIF[];
 
-  fromYear: number = 10;
-  toYear: number = 10;
+  fromYear: number = 5;
+  toYear: number = 1000;
 
   isAllTimeBirthYear: boolean = true;
+  isFilterApplied: boolean = false;
+  birthRangeError: boolean = false;
 
   constructor(private dataService: DataService, private router: Router) {
     this.filmTitles = filmTitlesFO;
@@ -71,7 +78,7 @@ export class CharactersComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.people = this.dataService.people;
+    this.onChangeFilter();
   }
 
   getGenderColor(gender: string) {
@@ -87,35 +94,64 @@ export class CharactersComponent implements OnInit {
     }
   }
 
+  onChangeBY() {
+    this.birthRangeError = this.fromYear > this.toYear;
+    this.isFilterApplied = !this.isAllTimeBirthYear;
+    let filteredPeople = this.dataService.people;
+
+    if (!this.isAllTimeBirthYear) {
+      filteredPeople = filteredPeople.filter((people) => {
+        const year = extractYearFromBirthYear(people.birth_year);
+        return year >= this.fromYear && year <= this.toYear;
+      });
+    }
+
+    this.people = filteredPeople;
+  }
+
   onChangeFilter() {
     let filteredPeople: SWPeopleIF[] = this.dataService.people;
+    this.isFilterApplied = false;
     if (this.selectedFilms) {
       filteredPeople = filterPeopleByFilms(
         filteredPeople,
         this.selectedFilms.map((film) => film.code)
       );
+      this.isFilterApplied = true;
     }
-
     if (this.selectedSpecies?.length > 0) {
       filteredPeople = filterPeopleBySpecies(
         filteredPeople,
         this.selectedSpecies.map((species) => species.code)
       );
+      this.isFilterApplied = true;
     }
     if (this.selectedVehicles) {
       filteredPeople = filterPeopleByVehicles(
         filteredPeople,
         this.selectedVehicles.map((vehicle) => vehicle.code)
       );
+      this.isFilterApplied = true;
     }
     if (this.selectedStarShips) {
       filteredPeople = filterPeopleByStarShips(
         filteredPeople,
         this.selectedStarShips.map((ship) => ship.code)
       );
+      this.isFilterApplied = true;
     }
 
     this.people = filteredPeople;
+  }
+
+  resetAllFilters() {
+    this.isAllTimeBirthYear = true;
+    this.selectedFilms = [];
+    this.selectedSpecies = [];
+    this.selectedVehicles = [];
+    this.selectedStarShips = [];
+    this.onChangeFilter();
+    this.onChangeBY();
   }
 
   onClickPeople(id: string) {
