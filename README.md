@@ -4,7 +4,7 @@ This is an Angular project that allows users to explore the Star Wars universe.
 
 ## Demo
 
-Check out the live demo of the app [here](https://starwars-gopi.netlify.app/people).
+Check out the live demo of the app [here](https://starwars-gopi.netlify.app/).
 
 ## Prerequisites
 
